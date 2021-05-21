@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 3rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #171118;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  color: #f91a47;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+form {
+  min-width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.task-input {
+  width: 90%;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f91a47;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: border 0.4s ease;
+  transition: border 0.4s ease;
+  margin-bottom: 2rem;
+}
+
+.hit {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f1c40f;
+  font-size: 1.2rem;
+}
+
+.todo-container {
+  min-width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-list {
+  height: 25vh;
+  width: 100%;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.todo {
+  padding: 0.6rem 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #301923;
+  font-size: 1.3rem;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 0.2rem;
+}
+
+.txt {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 0rem 0.4rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.done {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22px;
+  height: 22px;
+  background-color: #d5d5d5;
+  border-radius: 2px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.done:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font: 18px;
+  color: black;
+  display: none;
+}
+
+.done:checked {
+  background-color: #f1c40f;
+}
+
+.done:checked:after {
+  display: block;
+}
+
+.trash-btn {
+  width: 22px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #db222a;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 3rem 1.2rem;
+  }
+  .form {
+    min-width: 80%;
+  }
+  .todo-container {
+    min-width: 80%;
+  }
+}
