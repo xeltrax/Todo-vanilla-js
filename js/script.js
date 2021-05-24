@@ -7,13 +7,6 @@ document.addEventListener("DOMContentLoaded",getTodos);
 
 document.querySelector(".hit").addEventListener('click',(e) => {
         e.preventDefault();
-    
-        //FIXME: when the user clicks again on the checkbox then the label should be removed form
-        //        line through apply the logic of counter if the num/2 then remove line-through
-    
-        //TODO: when the user adds the task the task should save in the local storage of the browser and 
-        //       also add the current date to that.
-    
         if(input.value != ''){
             //Create List
             const newtodo = document.createElement('li');
